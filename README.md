@@ -9,7 +9,9 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 	A espionagem em massa
 
 	Seguranças básicas na internet
-
+	
+	Senhas - O elo mais fraco da segurança
+	
 	Segurança nos sistemas operacionais
 
 	Privacidade - Nossas armas para garanti-la
