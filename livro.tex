@@ -25,9 +25,13 @@
 
 \large Um dos maiores problemas na nossa sociedade moderna é a espionagem em massa. Governos roubam os teus dados, lhe espionam e ainda dizem que é para o seu próprio bem.\\
 
+\subsection{A espionagem governamental}
+
 	Depois dos vazamentos (leaks) feitos por \textbf{Edward Snowden}, várias pessoas em todo o mundo passaram a se preocupar com a prórpia segurança e privacidade. Mas ainda assim, uma boa parcela da população não se preocupa com a própria privacidade e segurança, muitas vezes por não saber o que governos e empresas fazem com os dados coletados. Mas a população deveria sim se  preocupar com a privacidade, pois os mesmos métodos utilizado pelos governos para roubarem dados, também são utilizado por criminosos.\\
 
 	A espionagem em massa acontece em todo e qualquer lugar do globo, não importa onde você esteja, se tem algum meio de comunicação você está vulnerável à espionagem. Mesmo que você apenas utilize um telefone fixo, você está vulnerável à espionagem.\\
+
+\subsection{Redes socias e os perigos à privacidade}
 
 	Redes sociais atualmente são um dos maiores perigos para a segurança e privacidade dos usuários, visto que é possível determinar os seus gostos, seus amigos, sua família e diversas outras coisas. Sites como o Facebook, enquanto você o utiliza ele monitora o que você está acessando para poder lhe fazer propagandas direcionadas. O Google também faz isto. Embora seja a forma que estas empresas tem de ganhar dinheiro, é muito invasivo e na maioria das vezes não funciona. Mas para poder escapar desta vigilância, existem algumas coisas que podemos fazer.\\
 	\begin{itemize} % Inicia a lista.
@@ -43,6 +47,8 @@
 %Segurança na internet.
 \section*{Segurança na internet}
 	A internet é um lugar vasto, mas com vários perigos. Estamos na era da informação, na qual tudo (ou quase tudo) é feito pela internet, e justamente por isso que ela se tornou extremamente perigosa para usuários leigos. Os perigos que corremos não vem apenas de criminosos, mas também do estado.\\
+
+\subsection{Os perigos}
 
 	Um dos maiores perigos que temos são os ataques de \href{https://criptowiki.miraheze.org/wiki/Phishing}{phishing}, que consiste basicamente em uma clonagem de sites feitos na rede interna ou não e que tem como objetivo roubar dados do usuário, como login e senha de bancos e de redes sociais.\\
 
@@ -64,6 +70,60 @@
 	Os spams são basicamente mensagens enviada para e-mails aleatórios com algum link para o usuário acessar ou algum arquivo para baixar. Eles foram e ainda são bem comuns, embora não seja um método muito eficaz atualmente, mas caso receba alguma mensagem por e-mail com um título sensacionalista, é recomendavel não abri-lo. Então a dica é que antes de abrir uma mensagem de e-mail, pense 2 vezes ao abrí-lo e se abrir, pense bem antes de clicar em algo.\\
 
 	Os arquivos e programas que são baixados na internet, muitas vezes podem vir com algum software malicioso junto ao arquivo ou programa baixado, desta forma, dando ao invasor total controle da máquina. Se for baixar algum arquivo ou software, certifique-se que ele está sendo baixado do site oficial ou até mesmo pela loja de software do sistema operacional.\\
+
+\pagebreak
+
+\section*{Senhas - O elo mais fraco da nossa segurança}
+
+As senhas são certamente uma das partes mais importantes da segurança e da privacidade. Com as senhas dos usuários na mão de pessoas mal intencionadas, pode-se fazer um grande estrago aos usuários. Embora as senhas sejam tão importantes para a segurança, ainda assim a maioria dos usuários espalhados pelo mundo usam senhas fracas e que comprometem a segurança dos usuários.\\
+
+\subsection{Por que nossas senhas não são boas?}
+
+\begin{itemize}
+	\item Viés cognitivo: as pessoas tem uma intuição deturpada de resultado aleatório, onde certas sequencias são favorecidas, esse comportamento de manada acaba produzindo senhas mais previsiveis.
+	\item Intuitivamente acreditamos que senha boa é uma senha complicada e super difícil de lembrar, quando na realidade para computadores são super fáceis de serem quebradas.
+	\item Exemplo: "\textit{S\&nha5F0d@}", tem 9 caracteres (contendo maiúsculas, minúsculas, números e caracteres especiais), mas é quebrada em segundos.
+\end{itemize}
+
+	Pelas senhas serem tão frágeis, devemos ter senhas boas, mas então temos uma questão, \textit{como podemos ter senhas boas?}\\
+
+\subsection{Como gerar boas senhas? Método Diceware}
+
+	O método \textit{diceware} é um método no qual, através de um dado, uma lista de palavras mais papel e lápis, podemos construir senhas mais seguras.\\
+
+	O método consiste em usar o dado para sortear palavras da lista. Jogue o dado 5 vezes por palavra. Os dois primeiros números são as páginas do livreto e os três últimos a palavra.\\
+
+	\textbf{Exemplo}: O usuário jogou o dado 5 vezes, tirando os números: \textbf{\textit{2-6-5-1-3}}. O usuário deverá ir até a página 2 e 6 do livreto e procurar pela palavra \textbf{\textit{513}}, que será "\textbf{\textit{egípcio}}.\\
+
+	É recomendado usar no mínimo 6 palavras utilizando o método do \textit{diceware}.\\
+
+
+	\footnote{Consulte o \href{https://github.com/thoughtworks/dadoware}{livreto} da ThoughtWorks para poder pegar a lista de palavras.}
+
+
+\subsection{Aprimorando o Diceware}
+
+	Para podermos gerar senhas ainda mais seguras utilizando o diceware, podemos:
+
+\begin{itemize}
+	\item Colocar alguns caracteres especiais e números entre as palavras.
+	\item Colocar aleatóriamente algumas letras em maiúsculas.
+	\item Utilizar termos técnicos e palavras que não existem em dicionários e listas.
+\end{itemize}
+
+	Em suma, o Diceware é um método de gerar senhas que é:
+
+\begin{itemize}
+	\item Harder: As senhas geradas são verdadeiramentes aleatórias, as tornando bem mais difíceis de quebrar.
+	\item Better: São melhores para lembrar.
+	\item Faster: É mais rápido de de pensar numa senha, basta jogar o dado (ou fazer no computador).
+	\item Stronger: As senhas geradas são mais fortes, pois tem muito mais combinações.
+\end{itemize}
+
+	\footnote{Gerador de senha utilizando o método Diceware: \href{https://github.com/caioau/personal/blob/master/DicewareGen/dicewareGen.py}{Diceware Generetor}}.
+
+\subsection{Geradores de senhas (Password Manager)}
+
 
 \pagebreak
 
@@ -130,7 +190,7 @@
 
 \pagebreak
 
-\section*{Engenharia Social - Um perigo real}
+\chapter{Cápitulo 2 - Segurança em nível médio.}
 
 
 \end{document} % Fim do documento.
