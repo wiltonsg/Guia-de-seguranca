@@ -6,28 +6,30 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 
 > **Segurança básica**
 
-	A espionagem em massa
+	A espionagem em massa - Um problema mundial
 
-	Seguranças básicas na internet
+	Seguranças internet
 	
+	Navegadoers, Cookies, Trackers e muito mais
+
 	Senhas - O elo mais fraco da segurança
 	
+	DNS
+
 	Segurança nos sistemas operacionais
 
-	Privacidade - Nossas armas para garanti-la
 ---
 
 > **Segurança média**
 
-	Criptografia - Por que ela é importante
+	Engenharia Social - A falha humana na segurança
 
-	Virtual Private Network (VPN) - Como utilizar
-
-	Engenharia Social - O que é e como se proteger
+	TailsOS - Um sistema operacional seguro
 
 	Não sei...
 
 	Não sei...
+
 
 > **Segurança avançada**
 
@@ -41,6 +43,8 @@ Ainda tem tópicos para serem adicionados, mas no momento não sei quais deve ad
 
 ***Coisas a serem feitas***:
 
-	Adicionar o indice.
-	
-	Outras coisas que não lembro no momento.
+	Capa
+
+	Indice
+
+	Colaboradores e agradecimentos
