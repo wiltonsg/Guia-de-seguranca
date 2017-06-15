@@ -24,11 +24,9 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 
 	Engenharia Social - A falha humana na segurança
 
+	Smartphones e a segurança digital
+
 	TailsOS - Um sistema operacional seguro
-
-	Não sei...
-
-	Não sei...
 
 
 > **Segurança avançada**
