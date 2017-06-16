@@ -1,0 +1,8 @@
+\section*{TailsOS - Um sistema operacional para segurança}
+	Com as crescentes denúncias e vazamentos de informações de governos a respeito da espionagem em massa, é normal que os usuários passem a se preocupar com a própria privacidade e segurança e busquem softwares para garanti a privacidade e segurança. E é exatamente neste momento que entra o \textbf{\textit{TailsOS}}, que é um sistema operacional baseado no \href{https://debian.org}{Debian GNU/Linux} e que tem como objetivo o anonimato. É mantido pelo \href{https://www.torproject.org/}{Tor Project}, é software livre e todo o tráfego de internet, quando se está utilizando o \textit{TailsOS} é passado pela rede Tor. O sistema também conta com outros diversos softwares considerados seguros, como o próprio \textbf{\textit{Tor Browser}}, \href{https://gnupg.org}{GnuPG}, \href{https://mozilla.org/thunderbird/}{Thunderbird} e vários outros softwares.\\
+
+\pagebreak
+
+\section*{A rede Tor}
+
+\end{document} % Fim do documento.
