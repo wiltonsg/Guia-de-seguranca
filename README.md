@@ -26,8 +26,12 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 
 	Smartphones e a segurança digital
 
-	Segurança física - Protegendo você e o hardware
+	A rede Tor
 
+	VPN's
+
+	Segurança física - Protegendo você e o hardware
+---
 
 > **Segurança avançada**
 
@@ -36,6 +40,8 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 	Não sei...
 
 	Não sei...
+
+---
 
 Ainda tem tópicos para serem adicionados, mas no momento não sei quais deve adicionar. Se caso você tenha alguma ideia, por favor, adicione-o aqui. :)
 
