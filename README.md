@@ -26,16 +26,22 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 
 	Smartphones e a segurança digital
 
-	TailsOS - Um sistema operacional seguro
+	A rede Tor
 
+	VPN's
+
+	Segurança física - Protegendo você e o hardware
+---
 
 > **Segurança avançada**
 
-	Não sei...
+	TailsOS - Um sistema operacional seguro
 
 	Não sei...
 
 	Não sei...
+
+---
 
 Ainda tem tópicos para serem adicionados, mas no momento não sei quais deve adicionar. Se caso você tenha alguma ideia, por favor, adicione-o aqui. :)
 
