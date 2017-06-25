@@ -47,8 +47,4 @@ Ainda tem tópicos para serem adicionados, mas no momento não sei quais deve ad
 
 ***Coisas a serem feitas***:
 
-	Capa
-
-	Indice
-
 	Colaboradores e agradecimentos
