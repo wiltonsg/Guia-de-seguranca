@@ -25,7 +25,7 @@
 \part{Capítulo 1 - Segurança básica}
 
 % Espionagem em massa - Um problema mundial.
-\section*{Espionagem em massa - Um problema mundial} % Coloca o título do assunto em uma nova página.
+\section{Espionagem em massa - Um problema mundial} % Coloca o título do assunto em uma nova página.
 
 \large Um dos maiores problemas na nossa sociedade moderna é a espionagem em massa. Governos roubam os teus dados, lhe espionam e ainda dizem que é para o seu próprio bem.\\
 
@@ -49,7 +49,7 @@
 \pagebreak % Termina de escrever na página.
 
 %Segurança na internet.
-\section*{Segurança na internet}
+\section{Segurança na internet}
 	A internet é um lugar vasto, mas com vários perigos. Estamos na era da informação, na qual tudo (ou quase tudo) é feito pela internet, e justamente por isso que ela se tornou extremamente perigosa para usuários leigos. Os perigos que corremos não vem apenas de criminosos, mas também do estado.\\
 
 \subsection{Os perigos}
@@ -77,7 +77,7 @@
 
 \pagebreak
 
-\section*{Navegadores, Cookies, Trackers e muito mais}
+\section{Navegadores, Cookies, Trackers e muito mais}
 	"\textbf{\textit{Data is money, my friend}}", sim, dados são dinheiro e empresas tem os dados de bilhões de usuários em todo o mundo.\\
 
 	Com a popularização da internet, o uso de navegadores é muito comum entre usuários em todo o mundo, mas enquanto usuários navegam na internet utilizando navegadores, correm um grande risco e podem perder a privacidade.\\
@@ -124,7 +124,7 @@
 
 
 
-\section*{Senhas - O elo mais fraco da nossa segurança}
+\section{Senhas - O elo mais fraco da nossa segurança}
 
 As senhas são certamente uma das partes mais importantes da segurança e da privacidade. Com as senhas dos usuários na mão de pessoas mal intencionadas, pode-se fazer um grande estrago aos usuários. Embora as senhas sejam tão importantes para a segurança, ainda assim a maioria dos usuários espalhados pelo mundo usam senhas fracas e que comprometem a segurança dos usuários.\\
 
@@ -189,10 +189,44 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 	\item Control+b: Copia o usuário.
 \end{itemize}
 
+\section{Autentificação em 2 Etapas (2FA)}
+	A \textit{\textbf{Autentificação em 2 Etapas}} (\textit{2FA}) é uma forma de identificação do usuário ao provedor de serviços, utilizando uma combinação de dois métodos diferentes de autentificação. A ideia por trás da \textit{2FA} é que para entrar na conta de um determinado serviço, o usuário precisa ter além da senha, um segundo componente que apenas ele o tenha.\\
+	Com o \textit{2FA} ativado, o usuário será solicitado a dar tanto a senha como algum método secundário de autentificação, normalmente um código enviado uma só vez pelo SMS ou um código gerado somente uma vez num aplicativo que armazena o segredo (\textit{\textbf{como o Google Authenticator e FreeOTP}}. Em qualquer caso, o segundo fator é o telefone celular do usuário, algo que (\textit{normalmente}) possui.\\
+
+\subsection{Por que usar o 2FA?}
+	A \textit{2FA} oferece maior segurança à conta por exigir autenticação da identidade por mais de um método. Dessa forma, mesmo se alguém conseguir obter a senha principal, não poderá usar a conta do usuário a menos que também tenha o telefone dele (\textit{usuário}) ou outro método secundário de autenticação.\\
+
+\subsection{Como usar o 2FA}
+	Cada serviço oferece uma forma diferente de ativar o \textit{2FA}, mas neste exemplo irei utilizar o \textit{\textbf{ProtonMail}}, que é um servidor de e-mail seguro (\textit{até onde sabemos}) e que oferece a \textit{2FA}. Primeiro é necessário ir até a \textit{\textbf{Play Store}} e fazer o download do \href{https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp}{FreeOTP} ou se preferir, pode usar o \href{https://f-droid.org/packages/org.fedorahosted.freeotp/}{F-Droid} ("\textit{Loja}" de softwares livres e OpenSource) para baixar e instalar o \textit{\textbf{FreeOTP}}.
+
+	\begin{center}
+		\includegraphics[scale=0.35]{FreeOTP-Fdroid.png}
+	\end{center}
+
+	Depois de instalar o \textit{\textbf{FreeOTP}}, vá até o site do \href{https://protonmail.com}{ProtonMail} e faça login (\textit{caso não tenha uma conta, crie uma}). Depois de ter feito o login, vá até "\textit{\textbf{Settings}}" e depois em "\textit{\textbf{Secutiry}}".
+
+	\begin{center}
+		\includegraphics[scale=0.53]{proton.png}
+	\end{center}
+
+	Como eu já tenho o \textit{2FA} ativado, está aparecendo "\textit{\textbf{Disable Tow-Factor Authentication}}", mas na tua conta, irá aparecer "\textit{\textbf{Enable Two-Factor Authentication}}", então clique no botão e irá aparecer:
+
+	\begin{center}
+		\includegraphics[scale=0.55]{proton2.png}
+	\end{center}
+
+	Clique em "\textit{Next}" e irá aparecer um \textit{QR Code}, pegue o celular e abra o \textit{\textbf{FreeOTP}}, clique no ícone de Qr Code, que está no canto superior direito e escanei o QR code. Depois de escanear o QR code, clique em "\textit{Next}". O ProtonMail irá exigir a tua senha de login e o código de autenticação de 2 passos, então digite tua senha e no outro campo, você irá precisar digitar o código do 2FA. Para obter este código, vá até o \textit{\textbf{FreeOTP}} e clique na opção que aparecer um código, então vá até o ProtonMail e digite este código no campo do 2FA.
+
+	\begin{center}
+		\includegraphics[scale=0.55]{FreeOTP.png}
+	\end{center}
+
+	Agora, toda vez que você for fazer login no ProtonMail será necessário além da sua senha, o código 2FA.
+
 \pagebreak
 
 % DNS
-\section*{DNS}
+\section{DNS}
 	O \href{https://criptowiki.miraheze.org/wiki/DNS_(Domain_Name_System)}{DNS} (\textbf{Domain Name System}) é o responsável por levar o usuário até o site desejado.\\
 	Suponha-se que o usuário deseja ir até o site \textbf{google.com}, para que ele possa ir até o site, é necessário ir até o \href{https://pt.wikipedia.org/wiki/IP}{IP} correspondente do site. O DNS é o responsável por levar o usuário até o IP correspondente ao site.
 	O servidor DNS interfere e muito na velocidade da conexão e também é possível que o servidor DNS seja invadido por alguém mal intencionado e utilizar o servidor DNS para que possa fazer um ataque phishing e assim fazer todos os usuários que utilizam aquele servidor acreditar que o site que está sendo acessado é o verdadeiro, quando na verdade é um site falso.\\
@@ -223,7 +257,7 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 \pagebreak
 
 % Segurança nos sistemas operacionais.
-\section*{Segurança nos sistemas operacionais}
+\section{Segurança nos sistemas operacionais}
 	O sistema operacional (\textbf{OS}) é a parte mais importante de um computador. É onde tudo ocorre, é onde o usuário usa a internet, edita documentos, guarda documentos e várias outras atividades e é exatamente por isto que deve-se mantê-lo seguro e livre de ameaças.\\
 
 	O sistema operacional para computadores mais utilizados atualmente é o Windows. Embora o Windows seja considerado por muitos como o melhor sistema operacional, na realidade não é bem assim. O Windows é um sistema operacional totalmente fechado, que quer dizer que nenhuma linha de código do sistema está exposto para que o usuário possa ver. Por este motivo, caso a Microsfot  deseje, ela pode colocar algum \href{https://criptowiki.miraheze.org/wiki/Backdoors}{backdoor} no OS e assim, não apenas a Microsoft mas também qualquer pessoa mal intencionada poderia fazer uso deste backdoor para poder controlar a máquina e roubar dados do usuário.\\
@@ -256,7 +290,7 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 
 \part{Capítulo 2 - Segurança em nível médio.}
 
-\section*{Engenharia Social - A falha humana na segurança}
+\chapter{Engenharia Social - A falha humana na segurança}
 	Uma das maiores falhas na segurança é certamente os humanos, que podem ser enganados facilmente por alguém mal intencionado. A \textbf{\textit{engenharia social}} é justamente a técnica que explora os humanos para que possa conseguir informações privilegiadas, e com as informações em mãos, conseguir fazer ataques, descobrir senhas de redes sociais, bancos e etc.\\
 
 \subsection{O que é engenharia social}
@@ -285,7 +319,7 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 
 \pagebreak
 
-\section*{Smartphones e a segurança digital}
+\section{Smartphones e a segurança digital}
 	Por smartphones serem baratos e de fácil uso, nos últimos anos, eles se popularizaram bastante e se tornou o meio de acesso à internet mais utilizado em todo o planeta. Mas por smartphones serem tão utilizados, os criminosos passaram a focar os seus esforços para atacar vítimas que utilizam os smartphones.\\
 
 \subsection{Os riscos}
@@ -304,7 +338,7 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 
 \pagebreak
 
-\section*{A rede Tor}
+\section{A rede Tor}
 	Com a crescente espionagem em massa acontecendo em todo o planeta, usuários passaram a se preocupar cada vez mais com a privacidade e segurança. A \textit{rede Tor} é uma grande aliada de usuários em todo o mundo, que buscam privacidade e segurança. Jornalistas em todo o mundo utilizam desta importante ferramenta para burlar a censura em seus países e assim poderem se manter seguros e livre das garras governamentais.\\
 
 \subsection{O que é a rede Tor}
@@ -347,7 +381,7 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 	Pela \textit{rede Tor} ter vários relays pela qual o tráfego de internet passa, a rede Tor costuma ser lenta, o que é um ponto negativo, mas nada que faça o usuário ficar tão preocupado.
 \pagebreak
 
-\section*{VPN's (Virtual Private Networks)}
+\section{VPN's (Virtual Private Networks)}
 	Não é apenas a \textit{rede Tor} que pode garantir a privacidade e segurança dos usuários, mas as \textit{\textbf{VPN's}} também são uma opção para quem deseja ter privacidade e segurança, mas sem sacrificar muito a velocidade da internet.
 
 \subsection{Como funciona as VPN's}
@@ -364,7 +398,7 @@ O \href{https://openvpn.org/}{OpenVPN} é o cliente VPN mais conhecido e usado a
 
 \pagebreak
 
-\section*{Segurança física - Protegendo você e o hardware}
+\section{Segurança física - Protegendo você e o hardware}
 	A segurança não se aplica apenas no mundo virtual, mas também no mundo real. Geralmente os usuários não se importam com a segurança física, a segurança do hardware. Mas esta é uma parte importante para que os usuários tenham privacidade e segurança.\\
 
 	Com tantas tecnologias surgindo sem parar, é normal que tenha surgido e que vão surgir novas tecnologias para invasão de computadores, quando se tem acesso físico à máquina.
