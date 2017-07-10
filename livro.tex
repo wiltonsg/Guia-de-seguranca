@@ -118,7 +118,7 @@
 \subsection{Como se proteger?}
 	Felizmente, existem alguns softwares que os usuários podem utilizar para que diminua esta vigilância em massa feita por empresas, estes softwares tentam bloquear anúncios e trackers. O \textit{AdBlock} e \textit{Privacy Badger}, que são extenções de navegador que tentam bloquear anúncios e trackers.\\
 
-	Softwares como o \href{https://linuxroot1.github.io/DNSCRYPT-Proxy/}{DNSCrypt-Proxy} também tentam bloquear malwares, anúncios e trackers à nível de DNS.\\
+	Softwares como o \href{https://linuxroot.noblogs.org/post/2017/07/06/instalando-e-usando-o-dnscrypt-proxy/}{DNSCrypt-Proxy} também tentam bloquear malwares, anúncios e trackers à nível de DNS.\\
 
 	Para usuários que se preocupam mais com a privacidade, existe a extensão \textbf{\textit{NoScript}} que bloqueia todos os scripts JavaScript por padrão e também o \textbf{\textit{uMatrix}}, que permite selecionar com ainda mais precisão com que tipo de funcionalidades pode interagir.
 
@@ -338,7 +338,7 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 
 \pagebreak
 
-\section{A rede Tor}
+\section{O Tor Browser}
 	Com a crescente espionagem em massa acontecendo em todo o planeta, usuários passaram a se preocupar cada vez mais com a privacidade e segurança. A \textit{rede Tor} é uma grande aliada de usuários em todo o mundo, que buscam privacidade e segurança. Jornalistas em todo o mundo utilizam desta importante ferramenta para burlar a censura em seus países e assim poderem se manter seguros e livre das garras governamentais.\\
 
 \subsection{O que é a rede Tor}
@@ -379,6 +379,40 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 	Agora o \textit{Tor Browser} está pronto para que seja usado. Com ele, tu poderá acessar o teu e-mail, sites da própria rede Tor e outros diversos sites, anonimamente.\\
 
 	Pela \textit{rede Tor} ter vários relays pela qual o tráfego de internet passa, a rede Tor costuma ser lenta, o que é um ponto negativo, mas nada que faça o usuário ficar tão preocupado.
+
+\section{Tor e Privoxy}
+	Como foi falado no sessão anterior, a rede Tor é uma rede formada por nós e que tem como objetivo garantir o anonimato dos usuários. Agora, irei mostrar como usar o Tor e Privoxy juntos, para que seja possível usar a rede Tor em outros browsers além do Tor Browser.
+
+\subsection{Instalando o Tor e Privoxy}
+	O \textit{\textbf{Tor}} e também o \textit{\textbf{Privoxy}} estão disponíveis nos repositórios das principais distribuições GNU/Linux existentes. Como exemplo será usado as distribuições \textit{\textbf{ArchLinux}} e \textit{\textbf{Debian GNU/Linux}} para poder instalar, configurar e usar o \textit{\textbf{Tor}} e \textit{\textbf{Privoxy}}.\\
+
+Para instalar o Tor e o Privoxy no \textit{\textbf{ArchLinux}}, de este comando:\\
+
+	\begin{quote}
+		\textit{\textbf{\$ sudo pacman -S tor privoxy}}\\
+	\end{quote}
+
+Para instalar o Tor e o Privoxy no \textit{\textbf{Debian GNU/Linux}}, de este comando:\\
+
+	\begin{quote}
+		\textit{\textbf{\$ sudo apt install tor privoxy}}\\
+	\end{quote}
+
+\subsection{Configurando o Privoxy}
+	Para configurar o Privoxy, é necessário abrir o arquivo \textit{\textbf{/etc/privoxy/config}}, para isto, de este comando:\\
+
+	\begin{quote}
+		\textit{\textbf{\$ sudo gedit /etc/privoxy/config}}\\
+	\end{quote}
+
+	Vá até a linha \textit{\textbf{1336}} e descomente-a, removendo o "\textit{\textbf{\#}}" do inicio da linha. Salve e feche o arquivo. Depois de ter configurado corretamente o Privoxy, deverá ser iniciado o Tor e o Privoxy, para isto, de este comando:\\
+
+	\begin{quote}
+		\textit{\textbf{\$ sudo systemctl start tor \&\& sudo systemctl start privoxy}}\\
+	\end{quote}
+
+	Depois de o Tor e o Privoxy estarem devidamente configurados e iniciados, deverá ser configurado o proxy do Privoxy em algum software, como por exemplo o browser Mozzila Firefox. Para configurar o proxy do Privoxy no Mozzila Firefox, vá até o menu localizado no canto superior direito, depois em "\textit{Preferences}", "\textit{Advanced}" e "\textit{Network}", clique em "\textit{Settings}", irá aparecer uma janela, selecione a opção "\textit{\textbf{Manual Proxy Configuration}}" e coloque no "\textit{HTTP Proxy}" o número "\textit{\textbf{127.0.0.1}}" e no "\textit{Port}", o número \textit{\textbf{8118}}, clique em "\textit{Ok}" e assim, na próxima vez que o Mozzila Firefox for iniciado, ele irá utilizar o Privoxy e Tor.\\
+
 \pagebreak
 
 \section{VPN's (Virtual Private Networks)}
