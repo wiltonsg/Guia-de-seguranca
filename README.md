@@ -26,7 +26,9 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 
 	Smartphones e a segurança digital
 
-	A rede Tor
+	O Tor Browser
+
+	Tor e Privoxy
 
 	VPN's
 
