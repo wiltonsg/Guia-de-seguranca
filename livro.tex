@@ -24,18 +24,17 @@
 
 Esta é uma obra feita de forma totalmente colaborativa, com a ajuda de várias pessoas.\\
 \\
-
-
 Documento sob licença \textit{\textbf{GFDL}}.\\
 Copyleft (C) 1990, 1991, 1992, 1993, 1994, 1999\\
 	\textit{\textbf{Free Software Fontadion, Inc.}}\\
 Veja a página da \href{https://www.gnu.org/licenses/fdl.html}{GNU Free Documentation License} (\textit{\textbf{GFDL}}).\\
 
-\begin{flushleft}
-\includegraphics[0.7]{gfdl.png}
-\end{flushleft}
-\pagebreak
+	\begin{flushleft}
+		\includegraphics[1]{gfdl.png}
+	\end{flushleft}
 
+\pagebreak
+  
 \pagebreak % Termina de escrever na página.
 
 \part{Capítulo 1 - Segurança básica}
@@ -312,7 +311,7 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 
 \part{Capítulo 2 - Segurança em nível médio.}
 
-\chapter{Engenharia Social - A falha humana na segurança}
+\section{Engenharia Social - A falha humana na segurança}
 	Uma das maiores falhas na segurança é certamente os humanos, que podem ser enganados facilmente por alguém mal intencionado. A \textbf{\textit{engenharia social}} é justamente a técnica que explora os humanos para que possa conseguir informações privilegiadas, e com as informações em mãos, conseguir fazer ataques, descobrir senhas de redes sociais, bancos e etc.\\
 
 \subsection{O que é engenharia social}
@@ -405,22 +404,22 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 \pagebreak
 
 \section{Tor e Privoxy}
-	Como foi falado no sessão anterior, a rede Tor é uma rede formada por nós e que tem como objetivo garantir o anonimato dos usuários. Agora, irei mostrar como usar o Tor e Privoxy juntos, para que seja possível usar a rede Tor em outros browsers além do Tor Browser.
+	Como foi falado no sessão anterior, a rede Tor é uma rede formada por nós e que tem como objetivo garantir o anonimato dos usuários. Agora, irei mostrar como usar o Tor e Privoxy juntos, para que seja possível usar a rede Tor em outros browsers além do Tor Browser.\\
 
 \subsection{Instalando o Tor e Privoxy}
-	O \textit{\textbf{Tor}} e também o \textit{\textbf{Privoxy}} estão disponíveis nos repositórios das principais distribuições GNU/Linux existentes. Como exemplo será usado as distribuições \textit{\textbf{ArchLinux}} e \textit{\textbf{Debian GNU/Linux}} para poder instalar, configurar e usar o \textit{\textbf{Tor}} e \textit{\textbf{Privoxy}}.\\
+	O \textit{\textbf{Tor}} e também o \textit{\textbf{Privoxy}} estão disponíveis nos repositórios das principais distribuições GNU/Linux existentes. Como exemplo será usado as distribuições \textit{\textbf{ArchLinux}} e \textit{\textbf{Debian GNU/Linux}} para poder instalar, configurar e usar o Tor e Privoxy.\\
+	
+	Para instalar o Tor e o Privoxy no \textit{\textbf{ArchLinux}}, de este comando:
 
-Para instalar o Tor e o Privoxy no \textit{\textbf{ArchLinux}}, de este comando:\\
+%\begin{quote}
+	\textit{\textbf{\$ sudo pacman -S tor privoxy}}
+%\end{quote}
 
-\begin{quote}
-	\textit{\textbf{\$ sudo pacman -S tor privoxy}}\\
-\end{quote}
+	Para instalar o Tor e o Privoxy no \textit{\textbf{Debian GNU/Linux}}, de este comando:\\
 
-Para instalar o Tor e o Privoxy no \textit{\textbf{Debian GNU/Linux}}, de este comando:\\
-
-\begin{quote}
+%\begin{quote}
 	\textit{\textbf{\$ sudo apt install tor privoxy}}\\
-\end{quote}
+%\end{quote}
 
 \subsection{Configurando o Privoxy}
 	Para configurar o Privoxy, é necessário abrir o arquivo \textit{\textbf{/etc/privoxy/config}}, para isto, de este comando:\\
