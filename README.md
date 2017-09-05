@@ -28,8 +28,6 @@ O ***Guia de Segurança para leigos*** é uma apostila que tem como objetivo ens
 
 	O Tor Browser
 
-	Tor e Privoxy
-
 	VPN's
 
 	Segurança física - Protegendo você e o hardware

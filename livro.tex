@@ -20,6 +20,7 @@
 \maketitle % Faz o título.
 \tableofcontents
 
+
 \pagebreak
 
 Esta é uma obra feita de forma totalmente colaborativa, com a ajuda de várias pessoas.\\
@@ -30,7 +31,7 @@ Copyleft (C) 1990, 1991, 1992, 1993, 1994, 1999\\
 Veja a página da \href{https://www.gnu.org/licenses/fdl.html}{GNU Free Documentation License} (\textit{\textbf{GFDL}}).\\
 
 	\begin{flushleft}
-		\includegraphics[1]{gfdl.png}
+		\includegraphics{gfdl.png}
 	\end{flushleft}
 
 \pagebreak
@@ -348,14 +349,12 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 
 	Aplicativos como o \textit{WhatsApp} são utilizado por milhões de pessoas em todo o planeta, então, qualquer um se torna um alvo em potencial. Milhões de usuários no Brasil já caíram em golpes no WhatsApp. Estas mensagens de golpes que os usuários recebem, muitas vezes são sensacionalistas, falam algo extremamente fantástico e infelizmente, por ingenuidade, alguns usuários caem nestes golpes que utilizam a \textit{engenharia social} para poderem convencer suas vítimas.\\
 
-	Hoje em dia, pelo fácil acesso à internet, usuários que preferem não pagar por aplicativos, buscam maneiras "ilegais" para poderem ter acesso aos aplicativos, mas muitas vezes sai mais caro do que comprar os aplicativos. Quando se baixa alguma \textbf{\textit{APK}} em algum site na internet, existe uma grande chance de que esta APK venha com algum malware junto a APK, então, é sempre bom tomar cuidado ao baixar APK's de sites não oficiais e não confiáveis, \textit{pois o barato pode sair caro}.
+	Hoje em dia, pelo fácil acesso à internet, usuários que preferem não pagar por aplicativos, buscam maneiras "ilegais" para poderem ter acesso aos aplicativos, mas muitas vezes sai mais caro do que comprar os aplicativos. Quando se baixa alguma \textbf{\textit{APK}} em algum site na internet, existe uma grande chance de que esta APK venha com algum malware junto, então, é sempre bom tomar cuidado ao baixar APK's de sites não oficiais e não confiáveis, \textit{pois o barato pode sair caro}.
 
 
 \footnote{\href{https://www.tecmundo.com.br/whatsapp/116247-novo-golpe-whatsapp-futebol-atingiu-2-milhoes-brasileiros.htm}{Novo golpe do WhatsApp sobre futebol já atingiu 2 milhões de brasileiros}}
 
-	Não é apenas com golpes do WhatsApp e malwares passado através de APK's de aplicativos que os usuários devem se preocupar. Redes wireless (\textit{WiFi}) nos dias atuais tem se tornado populares e quase que em qualquer lugar se encontra alguma rede wireless e algumas vezes, se encontra hotspots públicos para que a população use-os. Mas os usuários devem ficar atentos à rede que eles se conectam, pois podem ser vítimas de um ataque MITM (\textit{Man In The Midle}). O recente vazamento do \textbf{\textit{WikiLeaks}}, nomeado de \href{https://wikileaks.org/vault7/#Cherry\%20Blossom}{Cherry Blossom}, que faz parte da série de vazamentos do \textit{\textbf{Vault7}}, mostra que a CIA estava utilizando um sistema de hacking para redes wireless. O \textbf{\textit{Charry Blossom}} monitorava redes wireless, inclusive redes públicas e podiam fazer ataques MITM, controlando o trafego dos alvos para qualquer lugar.\\
-
-\footnote{\href{https://www.tecmundo.com.br/whatsapp/116247-novo-golpe-whatsapp-futebol-atingiu-2-milhoes-brasileiros.htm}{Novo golpe do WhatsApp sobre futebol já atingiu 2 milhões de brasileiros}}
+	Não é apenas com golpes do WhatsApp e malwares passado através de APK's de aplicativos que os usuários devem se preocupar. Redes wireless (\textit{WiFi}) nos dias atuais tem se tornado populares e quase que em qualquer lugar se encontra alguma rede wireless e algumas vezes, se encontra hotspots públicos para que a população use-os. Mas os usuários devem ficar atentos às redes que eles se conectam, pois podem ser vítimas de um ataque MITM (\textit{Man In The Midle}). O recente vazamento do \textbf{\textit{WikiLeaks}}, nomeado de \href{https://wikileaks.org/vault7/#Cherry\%20Blossom}{Cherry Blossom}, que faz parte da série de vazamentos do \textit{\textbf{Vault7}}, mostra que a CIA estava utilizando um sistema de hacking para redes wireless. O \textbf{\textit{Charry Blossom}} monitorava redes wireless, inclusive redes públicas e podiam fazer ataques MITM, controlando o trafego dos alvos para qualquer lugar.\\
 
 \pagebreak
 
@@ -403,42 +402,6 @@ As senhas são certamente uma das partes mais importantes da segurança e da pri
 
 \pagebreak
 
-\section{Tor e Privoxy}
-	Como foi falado no sessão anterior, a rede Tor é uma rede formada por nós e que tem como objetivo garantir o anonimato dos usuários. Agora, irei mostrar como usar o Tor e Privoxy juntos, para que seja possível usar a rede Tor em outros browsers além do Tor Browser.\\
-
-\subsection{Instalando o Tor e Privoxy}
-	O \textit{\textbf{Tor}} e também o \textit{\textbf{Privoxy}} estão disponíveis nos repositórios das principais distribuições GNU/Linux existentes. Como exemplo será usado as distribuições \textit{\textbf{ArchLinux}} e \textit{\textbf{Debian GNU/Linux}} para poder instalar, configurar e usar o Tor e Privoxy.\\
-	
-	Para instalar o Tor e o Privoxy no \textit{\textbf{ArchLinux}}, de este comando:
-
-%\begin{quote}
-	\textit{\textbf{\$ sudo pacman -S tor privoxy}}
-%\end{quote}
-
-	Para instalar o Tor e o Privoxy no \textit{\textbf{Debian GNU/Linux}}, de este comando:\\
-
-%\begin{quote}
-	\textit{\textbf{\$ sudo apt install tor privoxy}}\\
-%\end{quote}
-
-\subsection{Configurando o Privoxy}
-	Para configurar o Privoxy, é necessário abrir o arquivo \textit{\textbf{/etc/privoxy/config}}, para isto, de este comando:\\
-
-\begin{quote}
-	\textit{\textbf{\$ sudo gedit /etc/privoxy/config}}\\
-\end{quote}
-
-	Vá até a linha \textit{\textbf{1336}} e descomente-a, removendo o "\textit{\textbf{\#}}" do inicio da linha. Salve e feche o arquivo. Depois de ter configurado corretamente o Privoxy, deverá ser iniciado o Tor e o Privoxy, para isto, de este comando:\\
-
-\begin{quote}
-	\textit{\textbf{\$ sudo systemctl start tor}}\\
-	\textit{\textbf{\$ sudo systemctl start privoxy}}\\
-\end{quote}
-
-	Depois de o Tor e o Privoxy estarem devidamente configurados e iniciados, deverá ser configurado o proxy do Privoxy em algum software, como por exemplo o browser Mozzila Firefox. Para configurar o proxy do Privoxy no Mozzila Firefox, vá até o menu localizado no canto superior direito, depois em "\textit{Preferences}", "\textit{Advanced}" e "\textit{Network}", clique em "\textit{Settings}", irá aparecer uma janela, selecione a opção "\textit{\textbf{Manual Proxy Configuration}}" e coloque no "\textit{HTTP Proxy}" o número "\textit{\textbf{127.0.0.1}}" e no "\textit{Port}", o número \textit{\textbf{8118}}, clique em "\textit{Ok}" e assim, na próxima vez que o Mozzila Firefox for iniciado, ele irá utilizar o Privoxy e Tor.\\
-
-\pagebreak
-
 \section{VPN's (Virtual Private Networks)}
 	Não é apenas a \textit{rede Tor} que pode garantir a privacidade e segurança dos usuários, mas as \textit{\textbf{VPN's}} também são uma opção para quem deseja ter privacidade e segurança, mas sem sacrificar muito a velocidade da internet.
 
@@ -459,13 +422,13 @@ O \href{https://openvpn.org/}{OpenVPN} é o cliente VPN mais conhecido e usado a
 \section{Segurança física - Protegendo você e o hardware}
 	A segurança não se aplica apenas no mundo virtual, mas também no mundo real. Geralmente os usuários não se importam com a segurança física, a segurança do hardware. Mas esta é uma parte importante para que os usuários tenham privacidade e segurança.\\
 
-	Com tantas tecnologias surgindo sem parar, é normal que tenha surgido e que vão surgir novas tecnologias para invasão de computadores, quando se tem acesso físico à máquina.
+	Com tantas tecnologias surgindo sem parar, é normal que tenha surgido e que irão surgir novas tecnologias para invasão de computadores, quando se tem acesso físico à máquina.
 	\subsection{Os perigos}
 	Existem diversas formas de invadir máquinas através do acesso físico. Aparelhos \textit{USB's} são geralmente utilizados para poder invadir máquinas, como é o caso do \href{https://pt.wikipedia.org/wiki/Rubber_Ducky}{Rubber Ducky}, que é um dispositivo USB semelhante a um \textit{pen drive}, mas que quando é colocado no computador, emula o funcionamento de um teclado e executa uma sequência de ações no computador. O \textit{\textbf{Rubber Ducky}} utiliza uma liguagem de script, que contém instruções que o aparelho deve executar no computador. Existem tutoriais na internet, ao alcançe de todos para poderem desenvolver estes pequenos aparelhos. Também existem outros diversos aparelhos no mercado, que podem ser comprados por qualquer um, como o \textit{\textbf{Bash Bunny}}, que é visto como uma evolução do Rubber Ducky.\\
 
-	Não são apenas estes dispositivos que estão ao alcançe de todos os usuários, existem diversos no mercado, como você pode \href{https://hakshop.com/}{ver aqui}. Existem aparelhos como o \href{https://hakshop.com/products/lan-turtle}{Lan Turtle}, que é utilizado para fazer um ataque MITM (Man In The Middle).\\
+	Não são apenas estes dispositivos que estão ao alcance dos usuários. Existem diversos no mercado, como você pode \href{https://hakshop.com/}{ver aqui}. Existem aparelhos como o \href{https://hakshop.com/products/lan-turtle}{Lan Turtle}, que é utilizado para fazer um ataque MITM (\textit{Man In The Middle}).\\
 
-	Se o público tem acesso a estes aparelhos, para poderem invadir servidores e quebrar a segurança deles, imaginem o que agências governamentais, como a CIA, NSA, Abin (\textit{Agência Brasileira de Inteligência}) e diversas outras agências tem em seu arsenal.\\
+	Se o público já tem acesso a estes dispositivos, para invadir servidores e quebrar a segurança deles, imaginem o que agências governamentais, como a CIA, NSA, Abin (\textit{Agência Brasileira de Inteligência}) e diversas outras agências tem em seu arsenal.\\
 
 	O roubo de aparelhos eletrônicos como smartphones e notebooks atualmente é algo infelizmente normal. Quando uma pessoa mal intencionada rouba um notebook de uma outra pessoa, o criminoso pode ter acesso a \textit{\textbf{todos}} os arquivos do usuário.
 
