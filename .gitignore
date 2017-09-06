@@ -6,3 +6,6 @@ senhas.md
 *.log
 *.toc
 *.swp
+livro.fdb_latexmk
+livro.fls
+livro.tex.latexmain
